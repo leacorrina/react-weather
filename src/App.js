@@ -10,7 +10,11 @@ function App() {
         <Weather />
         <h3>
           Coded by Lea White and{" "}
-          <a href="https://github.com/leacorrina/react-weather" target="_blank">
+          <a
+            href="https://github.com/leacorrina/react-weather"
+            rel="noreferrer"
+            target="_blank"
+          >
             open-sourced on GitHub
           </a>
         </h3>
