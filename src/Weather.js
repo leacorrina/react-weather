@@ -1,8 +1,49 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
+/*import axios from "axios";*/
 import "./Weather.css";
 
 export default function Weather() {
+  return (
+    <div className="Weather">
+      <form>
+        <div className="row">
+          <div className="col-9">
+            <input
+              type="search"
+              placeholder="Enter a City..."
+              className="form-control"
+            />
+          </div>
+          <div className="col-3">
+            <input type="submit" value="Search" className="btn btn-primary" />
+          </div>
+        </div>
+      </form>
+      <h1>Boston</h1>
+      <ul>
+        <li>Tuesday 09:00</li>
+        <li>Partly Cloudy</li>
+      </ul>
+      <div className="row">
+        <div className="col-6">
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            alt="Partly Cloudy"
+          />
+          15°C
+        </div>
+        <div className="col-6">
+          <ul>
+            <li>Precipitation: 15%</li>
+            <li>Humidity: 70%</li>
+            <li>Wind: 7km/h</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+/*Code from previous projects - might want to use?
   const [city, setCity] = useState("");
   const [loaded, setLoaded] = useState(false);
   const [weather, setWeather] = useState({});
@@ -36,8 +77,9 @@ export default function Weather() {
         type="search"
         placeholder="Enter a City..."
         onChange={updateCity}
+        className="form-control"
       />
-      <input type="submit" value="Search" />
+      <input type="submit" value="Search" className="btn btn-primary" />
     </form>
   );
 
@@ -58,5 +100,4 @@ export default function Weather() {
     );
   } else {
     return form;
-  }
-}
+  }*/

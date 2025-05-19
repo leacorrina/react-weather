@@ -6,8 +6,6 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Weather App</h1>
-        <button className="btn-primary">Test</button>
         <Weather />
         <footer>
           Coded by Lea White and{" "}
